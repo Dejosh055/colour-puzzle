@@ -2,12 +2,15 @@
 const gameStatus = document.querySelector('#status');
 const userScore = document.querySelector('#score');
 const newGame    = document.querySelector('#newgame')
+const box        = document.querySelector('#box-colour')
+ 
+
 
 // function Hint(){
 //      gameStatus.textContent=`Guess the correct color! (Hint:${correctColor})`;
 // }
 function getRandomColor(){
-    const colors =['red','blue', 'green', 'yellow', 'orange' ,'purple']
+    const colors =['red','blue', 'lightgreen', 'yellow', 'orange' ,'purple']
     return colors[Math.floor(Math.random()*colors.length)];
 }
 
@@ -17,9 +20,10 @@ function checkGuessColor( color,button){
 if(color === correctColor){
 score += 5;
  gameStatus.textContent =`correct! the color was ${correctColor}.Generating a new color...`;
- gameStatus.style.color = 'green';
+ gameStatus.style.color = 'lightgreen';
  button.classList.add("correct")
  correctColor = getRandomColor();
+
 //  setTimeout(()=>{
 //     correctColor = getRandomColor();
 //     Hint()
@@ -40,6 +44,7 @@ setTimeout(()=>{
     button.classList.remove("correct","wrong")
 }, 500)
 userScore.textContent = `Score: ${score}`;
+box.style.background = getRandomColor()
 }
 newGame.addEventListener('click',()=>{
     score = 0
