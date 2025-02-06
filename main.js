@@ -17,6 +17,7 @@ function getRandomColor(){
 let correctColor = getRandomColor()
 let score = 0;
 function checkGuessColor( color,button){
+    box.style.background = getRandomColor()
 if(color === correctColor){
 score += 5;
  gameStatus.textContent =`correct! the color was ${correctColor}.Generating a new color...`;
@@ -44,7 +45,7 @@ setTimeout(()=>{
     button.classList.remove("correct","wrong")
 }, 500)
 userScore.textContent = `Score: ${score}`;
-box.style.background = getRandomColor()
+
 }
 newGame.addEventListener('click',()=>{
     score = 0
