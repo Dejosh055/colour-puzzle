@@ -7,7 +7,7 @@ body{
     background: radial-gradient(skyblue,blue);
     height: 100vh;
 }
-#colorBox{
+#ColorBox{
     padding: 10px;
     border: none;
     cursor: pointer;
