@@ -7,7 +7,7 @@ body{
     background: radial-gradient(skyblue,blue);
     height: 100vh;
 }
-#box-colour{
+#colorBox{
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -23,7 +23,7 @@ body{
    
 }
 
-#colourbox{
+#colourOption{
     display: grid;
     margin: 20px auto;
     max-width: 200px;
@@ -80,7 +80,7 @@ h1 , p {
     font-size: 40px;
     color: #fff;
 }
-#newgame{
+#newGameButton{
     padding: 10px;
     align-items: center;
     justify-content: center;

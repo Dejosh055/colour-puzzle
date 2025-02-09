@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>color puzzle</title>
+    <title>Color Game</title>
 </head>
 <body>
    <div class="content">
-    <h1 id="instruction" style="padding-top: 40px;"> 
+    <h1 id="gameinstruction" style="padding-top: 40px;"> 
      Guess the color by clicking a butten
     </h1>
-    <div id="box-colour"></div> 
-    <button id="newgame">NEW GAME</button>
-    <p id="status"></p>
+    <div id="ColorBox"></div> 
+    <button id="newGameButton">NEW GAME</button>
+    <p id="gameStatus"></p>
     <h1 id="score"> Score: 0</h1>
    
    </div>
-   <div id="colourbox">
+   <div id="colourOption">
     <button class="color-btn" onclick="checkGuessColor('red', this)" style="background: red;"></button>
     <button class="color-btn" onclick="checkGuessColor('blue',this)" style="background: blue;"></button>
     <button  class="color-btn" onclick="checkGuessColor('green',this)" style="background: lightgreen;"></button>

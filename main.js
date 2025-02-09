@@ -1,8 +1,8 @@
  
-const gameStatus = document.querySelector('#status');
+const gameStatus = document.querySelector('#gameStatus');
 const userScore = document.querySelector('#score');
-const newGame    = document.querySelector('#newgame')
-const box        = document.querySelector('#box-colour')
+const newGame    = document.querySelector('#newGameButton')
+const box        = document.querySelector('#ColorBox')
  
 
 
